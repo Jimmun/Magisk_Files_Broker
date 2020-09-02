@@ -4,7 +4,7 @@
 
 将[Magisk File Host](https://github.com/topjohnwu/magisk_files)的.Json 文件内链接重新指向代理镜像网站<https://fastgit.org/>
 
-文件内容每 8 小时更新一次
+文件内容每 8 小时同步更新一次
 
 ## 自定义更新通道
 
