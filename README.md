@@ -10,9 +10,9 @@
 
 |  版本  |                                     链接                                     |
 | :----: | :--------------------------------------------------------------------------: |
-| stable | <https://download.fastgit.org/RC1844/Magisk_Files_Broker/master/stable.json> |
-|  beta  |  <https://download.fastgit.org/RC1844/Magisk_Files_Broker/master/beta.json>  |
-| canary | <https://download.fastgit.org/RC1844/Magisk_Files_Broker/master/debug.json>  |
+| stable | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/stable.json> |
+|  beta  |  <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/beta.json>  |
+| canary | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/debug.json>  |
 
 ## 其他
 

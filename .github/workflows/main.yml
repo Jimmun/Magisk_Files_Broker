@@ -30,7 +30,7 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "raw.githubusercontent.com"
-          replace: "download.fastgit.org"
+          replace: "raw.fastgit.org"
           include: ".json"
 
       - name: Find and Replace
