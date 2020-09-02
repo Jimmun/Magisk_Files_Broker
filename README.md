@@ -18,4 +18,4 @@
 
 如果需要更换镜像网站，请[New issues](https://github.com/RC1844/Magisk_Files_Broker/issues/new/choose)
 
-或者 Fork 本仓库，并修改[main.yml](https://github.com/RC1844/Magisk_Files_Broker/blob/master/.github/workflows/main.yml)
+或者 Fork 该仓库，并修改[main.yml](https://github.com/RC1844/Magisk_Files_Broker/blob/master/.github/workflows/main.yml)
