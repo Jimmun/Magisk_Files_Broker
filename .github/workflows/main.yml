@@ -1,0 +1,25 @@
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Json
+        run: |
+          wget https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json -O beta.json
+          wget https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json -O stable.json
+          wget https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json -O debug.json
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "https://raw.githubusercontent.com"
+          replace: "https://download.fastgit.org"
+          include: "*.json"
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "https://github.com"
+          replace: "https://download.fastgit.org"
+          include: "*.json"
