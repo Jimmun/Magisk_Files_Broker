@@ -31,21 +31,27 @@ jobs:
         with:
           find: "raw.githubusercontent.com"
           replace: "download.fastgit.org"
-          include: ".json" 
+          include: ".json"
 
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "github.com"
           replace: "download.fastgit.org"
-          include: ".json" 
+          include: ".json"
 
       - name: Commit files
         run: |
           git config --local user.email "1844766234@qq.com"
           git config --local user.name "RC1844"
-          git add .
-          
+          a=`expr length "$(git commit -m "Add changes" -a)"`
+          if [ $a -gt 85 ]
+          then
+          echo "'$a' No!!"
+          else
+          echo "'$a' Yes!!!!"
+          fi
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
