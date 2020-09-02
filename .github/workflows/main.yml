@@ -45,7 +45,7 @@ jobs:
           git config --local user.email "1844766234@qq.com"
           git config --local user.name "RC1844"
           git add .
-          git commit -m "Add changes"
+          
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
