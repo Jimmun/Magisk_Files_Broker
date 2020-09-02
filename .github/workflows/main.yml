@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
@@ -26,26 +26,27 @@ jobs:
           wget https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json -O stable.json
           wget https://raw.githubusercontent.com/topjohnwu/magisk_files/canary/debug.json -O debug.json
 
-      - uses: actions/checkout@v2
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "raw.githubusercontent.com"
           replace: "download.fastgit.org"
           # exclude: "*.md"
-      - uses: actions/checkout@v2
+
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "github.com"
           replace: "download.fastgit.org"
           # exclude: "*.md"
-      - name: Commit files
+      - name: Commit files and Push
         run: |
           git config --local user.email "1844766234@qq.com"
           git config --local user.name "RC1844"
+          git add .
           git commit -m "Add changes" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          git push
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@master
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
