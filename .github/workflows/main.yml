@@ -45,8 +45,7 @@ jobs:
           git config --local user.name "RC1844"
           git add .
           git commit -m "Add changes" -a
-          git push
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@master
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
