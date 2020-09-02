@@ -32,14 +32,14 @@ jobs:
         with:
           find: "raw.githubusercontent.com"
           replace: "download.fastgit.org"
-          exclude: "*.md"
+          # exclude: "*.md"
       - uses: actions/checkout@v2
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "github.com"
           replace: "download.fastgit.org"
-          exclude: "*.md"
+          # exclude: "*.md"
       - name: Commit files
         run: |
           git config --local user.email "1844766234@qq.com"
