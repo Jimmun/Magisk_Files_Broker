@@ -31,16 +31,16 @@ jobs:
         with:
           find: "raw.githubusercontent.com"
           replace: "download.fastgit.org"
-          exclude: ".md"
+          exclude: ".md .yml"
 
       - name: Find and Replace
         uses: jacobtomlinson/gha-find-replace@master
         with:
           find: "github.com"
           replace: "download.fastgit.org"
-          exclude: ".md"
-          
-      - name: Commit files and Push
+          exclude: ".md .yml"
+
+      - name: Commit files
         run: |
           git config --local user.email "1844766234@qq.com"
           git config --local user.name "RC1844"
