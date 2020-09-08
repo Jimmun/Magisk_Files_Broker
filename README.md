@@ -8,8 +8,8 @@
 
 ## 自定义更新通道
 
-|  版本  |                                     链接                                     |
-| :----: | :--------------------------------------------------------------------------: |
+|  版本  |                                  链接                                   |
+| :----: | :---------------------------------------------------------------------: |
 | stable | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/stable.json> |
 |  beta  |  <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/beta.json>  |
 | canary | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/debug.json>  |
