@@ -42,13 +42,17 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.email "1844766234@qq.com"
-          git config --local user.name "RC1844"
           {
+              git config --local user.email "1844766234@qq.com"
+              git config --local user.name "RC1844"
               git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a
-              echo $?
-          } && {
-              echo "Add Commit Success"
+              if [ $? -eq 0 ]; then
+                  echo "Add Update."
+              else
+                  echo "No Update."
+              fi
+          } || {
+              echo "Execution Failed"
           }
 
       - name: Push changes
