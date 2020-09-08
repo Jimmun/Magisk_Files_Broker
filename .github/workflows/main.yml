@@ -44,12 +44,13 @@ jobs:
         run: |
           git config --local user.email "1844766234@qq.com"
           git config --local user.name "RC1844"
-          a=`expr length "$(git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a)"`
-          if [ $a -gt 85 ]
+          echo "$(git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a)"
+          
+          if [ $? ==0 ]
           then
-          echo "'$a' No!!"
+          echo "No!!"
           else
-          echo "'$a' Yes!!!!"
+          echo "Yes!!!!"
           fi
 
       - name: Push changes
