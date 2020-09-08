@@ -44,12 +44,12 @@ jobs:
         run: |
           git config --local user.email "1844766234@qq.com"
           git config --local user.name "RC1844"
-          echo "$(git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a)"
-          if [ $? == 0 ]; then
-              echo "Yes!!!!"
-          else
-              echo "No!!"
-          fi
+          {
+              git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a
+              echo $?
+          } && {
+              echo "Add Commit Success"
+          }
 
       - name: Push changes
         uses: ad-m/github-push-action@master
