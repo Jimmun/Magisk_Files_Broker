@@ -1,9 +1,9 @@
 {
   "app": {
-    "version": "8.0.0",
-    "versionCode": "302",
-    "link": "https://download.fastgit.org/topjohnwu/Magisk/releases/download/manager-v8.0.0/MagiskManager-v8.0.0.apk",
-    "note": "https://raw.fastgit.org/topjohnwu/Magisk/64effe9385e3d8e473d9b67f93f10c299c3712eb/app/src/main/res/raw/changelog.md"
+    "version": "8.0.2",
+    "versionCode": "307",
+    "link": "https://download.fastgit.org/topjohnwu/Magisk/releases/download/manager-v8.0.2/MagiskManager-v8.0.2.apk",
+    "note": "https://cdn.jsdelivr.net/gh/topjohnwu/Magisk@manager-v8.0.2/app/src/main/res/raw/changelog.md"
   },
   "uninstaller": {
     "link": "https://download.fastgit.org/topjohnwu/Magisk/releases/download/v20.4/Magisk-uninstaller-20200323.zip"
