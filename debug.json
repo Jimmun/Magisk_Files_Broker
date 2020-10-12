@@ -1,13 +1,13 @@
 {
   "app": {
-    "version": "efb1eab3",
-    "versionCode": "309",
+    "version": "339ca6d6",
+    "versionCode": "310",
     "link": "https://raw.fastgit.org/topjohnwu/magisk_files/canary/app-debug.apk",
     "note": "https://raw.fastgit.org/topjohnwu/magisk_files/canary/notes.md"
   },
   "magisk": {
-    "version": "04995881",
-    "versionCode": "21002",
+    "version": "872c5520",
+    "versionCode": "21004",
     "link": "https://raw.fastgit.org/topjohnwu/magisk_files/canary/magisk-debug.zip",
     "note": "https://raw.fastgit.org/topjohnwu/magisk_files/canary/notes.md",
     "md5": "d772c46890dd232143c8ef3d06a725e7"
