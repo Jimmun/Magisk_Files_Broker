@@ -12,7 +12,7 @@
 | :----: | :---------------------------------------------------------------------: |
 | stable | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/stable.json> |
 |  beta  |  <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/beta.json>  |
-| canary | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/debug.json>  |
+| canary | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/canary.json> |
 
 ## 其他
 
