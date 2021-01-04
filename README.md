@@ -10,12 +10,12 @@
 
 |  版本  |                                  链接                                   |
 | :----: | :---------------------------------------------------------------------: |
-| stable | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/stable.json> |
-|  beta  |  <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/beta.json>  |
-| canary | <https://raw.fastgit.org/RC1844/Magisk_Files_Broker/master/canary.json> |
+| stable | <https://cdn.jsdelivr.net/gh/RC1844/Magisk_Files_Broker@master/stable.json> |
+|  beta  |  <https://cdn.jsdelivr.net/gh/RC1844/Magisk_Files_Broker@master/beta.json>  |
+| canary | <https://cdn.jsdelivr.net/gh/RC1844/Magisk_Files_Broker@master/canary.json> |
 
 ## 其他
 
 如果需要更换镜像网站，请[New issues](https://github.com/RC1844/Magisk_Files_Broker/issues/new/choose)
 
-或者 Fork 该仓库，并修改[main.yml](https://github.com/RC1844/Magisk_Files_Broker/blob/master/.github/workflows/main.yml)
+或者 Fork 该仓库，并修改[main.yml](.github/workflows/main.yml)
