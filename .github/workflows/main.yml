@@ -52,12 +52,12 @@ jobs:
               git add .
               git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a
               if [ $? -eq 0 ]; then
-                  echo "Add Update." >>RunDate.txt
+                  echo Add Update. >>RunDate.txt
               else
-                  echo "No Update." >>RunDate.txt
+                  echo No Update. >>RunDate.txt
               fi
           } || {
-              echo "Execution Failed" >>RunDate.txt
+              echo Execution Failed >>RunDate.txt
               exit 1
           }
 
