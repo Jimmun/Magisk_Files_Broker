@@ -45,24 +45,26 @@ jobs:
 
       - name: Commit files
         run: |
-          date >RunDate.txt
           {
               git config user.name github-actions
               git config user.email github-actions@github.com
               git add .
               git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a
               if [ $? -eq 0 ]; then
-                  echo Add Update. >>RunDate.txt
+                  echo Add Update. >RunDate.txt
               else
-                  echo No Update. >>RunDate.txt
+                  echo No Update. >RunDate.txt
               fi
           } || {
-              echo Execution Failed >>RunDate.txt
+              echo Execution Failed >RunDate.txt
               exit 1
           }
 
       - name: Push changes
-        run: git push
+        run: |
+          date >>RunDate.txt
+          git commit -m "$(date "+%Y-%m-%d %H:%M:%S")" -a
+          git push
       #   uses: ad-m/github-push-action@master
       #   with:
       #     github_token: ${{ secrets.GITHUB_TOKEN }}
