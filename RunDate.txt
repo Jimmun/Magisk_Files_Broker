@@ -1,2 +1,10 @@
-No Update.
-Mon Feb 22 08:10:55 UTC 2021
+<?xml version="1.0" encoding="UTF-8"?>
+  <manifest>
+      <!-- SONY -->
+      <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-18.1" />
+      <project name="whatawurst/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-18.1" />
+      <project name="whatawurst/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-18.1" />
+
+      <!-- Pinned blobs for poplar -->
+      <project name="whatawurst/android_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-18.1" />
+  </manifest>
